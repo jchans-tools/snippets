@@ -1,0 +1,86 @@
+{
+  "width string": {
+    "prefix": "ws",
+    "body": ["'width'"],
+    "description": "width string"
+  },
+
+  "height string": {
+    "prefix": "hs",
+    "body": ["'height'"],
+    "description": "height string"
+  },
+
+  "jQuery $(this)": {
+    "prefix": "thisJQ",
+    "body": ["$(this)"],
+    "description": "jQuery $(this)"
+  },
+
+  "jQuery script plain": {
+    "prefix": "jqp",
+    "body": ["$('${1:selector}').${2:method}($0);"],
+    "description": "jQuery script plain"
+  },
+
+  "jQuery script with function": {
+    "scope": "javascript,typescript",
+    "prefix": "jqf",
+    "body": [
+      "$('${1:selector}').${2:method}('${3:selector2}', function () {",
+      "        $0",
+      "      });"
+    ],
+    "description": "jQuery script with function"
+  },
+
+  "jQuery script handling event": {
+    "scope": "javascript,typescript",
+    "prefix": "jqs",
+    "body": ["$('${1:selector}').${2:method}('${3:selector2}', $0);"],
+    "description": "jQuery script handling event"
+  },
+
+  "jQuery html template with BS4": {
+    "prefix": "jqhb4",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>${1:Test}</title>",
+      "    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"",
+      "        integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">",
+      "<style></style>",
+      "</head>",
+      "",
+      "<body>",
+      "",
+      "    <div class=\"container\">",
+      "        <div class=\"row\">",
+      "            $0",
+      "        </div>",
+      "    </div>",
+      "",
+      "    <script src=\"https://code.jquery.com/jquery-3.5.1.js\"",
+      "        integrity=\"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=\" crossorigin=\"anonymous\"></script>",
+      "    <script>",
+      "        jq;",
+      "    </script>",
+      "</body>",
+      "",
+      "</html>"
+    ],
+    "description": "jq practice"
+  },
+
+  "jQuery 3.5.1 CDN": {
+    "prefix": "jq",
+    "body": [
+      "<script src=\"https://code.jquery.com/jquery-3.5.1.js\" integrity=\"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=\" crossorigin=\"anonymous\"></script>"
+    ],
+    "description": "jQuery 3 CDN"
+  }
+}

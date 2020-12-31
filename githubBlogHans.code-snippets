@@ -1,0 +1,26 @@
+{
+  "blog new entry": {
+    "prefix": "blogNew",
+    "body": [
+      "<!-- Code card start -->",
+      "<div class=\"col-lg-8 card dailypost\">",
+      "  <div class=\"card\">",
+      "    <div class=\"card-body\">",
+      "      <h5 class=\"card-title\">${1:卡片標題}</h5>",
+      "      <ul>",
+      "        <li>$0</li>",
+      "      </ul>",
+      "      <!-- ",
+      "      <figure>",
+      "        <figcaption>小標題</figcaption>",
+      "        <pre><code>指令</code></pre>",
+      "      </figure>",
+      "      --> ",
+      "    </div>",
+      "  </div>",
+      "</div>",
+      "<!-- Code card end -->"
+    ],
+    "description": "blog new entry"
+  }
+}
