@@ -19,7 +19,7 @@
 
   "jQuery script plain": {
     "prefix": "jqp",
-    "body": ["$('${1:selector}').${2:method}($0);"],
+    "body": ["$(${1:selector}).${2:method}($0);"],
     "description": "jQuery script plain"
   },
 
