@@ -1,0 +1,8 @@
+{
+  "module exports": {
+    "scope": "javascript,typescript",
+    "prefix": "me",
+    "body": ["module.exports = $0;"],
+    "description": "module exports"
+  }
+}
