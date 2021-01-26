@@ -16,29 +16,55 @@
   // 	"description": "Log output to console"
   // }
 
+  "import React": {
+    "scope": "javascript",
+    "prefix": "ir",
+    "body": ["import React from 'react'$0"],
+    "description": "import useState"
+  },
+
+  "import useState": {
+    "scope": "javascript",
+    "prefix": "ius",
+    "body": ["import { useState } from \"react\"$0"],
+    "description": "import useState"
+  },
+
+  "import React and useState": {
+    "scope": "javascript",
+    "prefix": "iru",
+    "body": ["import React, { useState } from \"react\"$0"],
+    "description": "import useState"
+  },
+
   "import without braces": {
     "scope": "javascript",
     "prefix": "imp",
-    "body": ["import ${1} from '${2}'$0"],
+    "body": ["import ${1} from '$0'"],
     "description": "import without braces"
   },
 
   "Function Component Template": {
+    "scope": "javascript",
     "prefix": "fc",
     "body": [
-      "function ${3:ComponentName}() {",
+      "function ${1:ComponentName}(${2}) {",
+      "  $0",
       "",
       "  return (",
-      "    <>${4}</>$0",
+      "    <${3:htmlTag}>",
+      "      <${4: returnCode} />",
+      "    </${3:htmlTag}>",
       "  )",
       "}",
       "",
-      "export default ${3:ComponentName}"
+      "export default ${1:ComponentName}"
     ],
     "description": "Function Component Template"
   },
 
   "App with Import": {
+    "scope": "javascript",
     "prefix": "ai",
     "body": [
       "import ${1} from 'react'",
@@ -46,7 +72,9 @@
       "function ${3:ComponentName}() {",
       "",
       "  return (",
-      "    <>${4}</>$0",
+      "    <${4: htmlTag}>",
+      "      <${5: returnCode} />",
+      "    </{4: htmlTag}>$0",
       "  )",
       "}",
       "",

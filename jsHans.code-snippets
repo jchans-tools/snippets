@@ -1,7 +1,15 @@
 {
   "console.log()": {
+    "scope": "javascript",
     "prefix": "cl",
     "body": ["console.log($0);"],
     "description": "console.log()"
+  },
+
+  "const": {
+    "scope": "javascript",
+    "prefix": "cs",
+    "body": ["const"],
+    "description": "const"
   }
 }
