@@ -17,35 +17,49 @@
   // }
 
   "import React": {
-    "scope": "javascript",
+    "scope": "javascript,typescript,javascriptreact",
     "prefix": "ir",
     "body": ["import React from 'react'$0"],
     "description": "import useState"
   },
 
   "import useState": {
-    "scope": "javascript",
+    "scope": "javascript,typescript,javascriptreact",
     "prefix": "ius",
-    "body": ["import { useState } from \"react\"$0"],
+    "body": ["import { useState } from 'react'$0"],
     "description": "import useState"
   },
 
   "import React and useState": {
-    "scope": "javascript",
+    "scope": "javascript,typescript,javascriptreact",
     "prefix": "iru",
-    "body": ["import React, { useState } from \"react\"$0"],
+    "body": ["import React, { useState } from 'react'$0"],
+    "description": "import useState"
+  },
+
+  "import React and useState and useEffect": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "irus",
+    "body": ["import React, { useState, useEffect } from \"react\"$0"],
     "description": "import useState"
   },
 
   "import without braces": {
-    "scope": "javascript",
+    "scope": "javascript,typescript,javascriptreact",
     "prefix": "imp",
     "body": ["import ${1} from '$0'"],
     "description": "import without braces"
   },
 
+  "Create Hook with useState": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "chu",
+    "body": ["const [${1:hook}, set${2:Hook}] = useState($0)"],
+    "description": "React Hook"
+  },
+
   "Function Component Template": {
-    "scope": "javascript",
+    "scope": "javascript,typescript,javascriptreact",
     "prefix": "fc",
     "body": [
       "function ${1:ComponentName}(${2}) {",
@@ -63,23 +77,49 @@
     "description": "Function Component Template"
   },
 
-  "App with Import": {
-    "scope": "javascript",
-    "prefix": "ai",
+  "Class Component Template": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "cc",
     "body": [
-      "import ${1} from 'react'",
+      "class ${1:ComponentName} extends React.Component {",
+      "  constructor(${2}) {",
+      "    super(${2})",
+      "    this.state = {",
+      "      ${3}",
+      "    }",
+      "    ${4}",
+      "  }",
       "",
-      "function ${3:ComponentName}() {",
+      "  render() {",
+      "  ${5}",
+      "    return (",
+      "      <>",
+      "        $0",
+      "      </>",
+      "    )",
+      "  }",
+      "}",
       "",
+      "export default ${1:ComponentName}"
+    ],
+    "description": "Class Component Template"
+  },
+
+  "New App Importing One Component": {
+    "prefix": "nac",
+    "body": [
+      "import ${1:ComponentName} from './components/${1:ComponentName}'",
+      "",
+      "function App() {",
       "  return (",
-      "    <${4: htmlTag}>",
-      "      <${5: returnCode} />",
-      "    </{4: htmlTag}>$0",
+      "    <>",
+      "      <${1:ComponentName} />$0",
+      "    </>",
       "  )",
       "}",
       "",
-      "export default ${3:ComponentName}"
+      "export default App"
     ],
-    "description": "Function Component Template"
+    "description": "New App Importing One Component"
   }
 }
