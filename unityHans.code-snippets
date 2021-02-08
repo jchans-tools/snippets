@@ -19,7 +19,7 @@
   "Debug.log()": {
     "scope": "csharp",
     "prefix": "dl",
-    "body": ["Debug.log($0);"],
+    "body": ["Debug.Log($0);"],
     "description": "Debug.log()"
   }
 }

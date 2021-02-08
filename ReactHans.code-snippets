@@ -53,7 +53,7 @@
 
   "Create Hook with useState": {
     "scope": "javascript,typescript,javascriptreact",
-    "prefix": "chu",
+    "prefix": "ho",
     "body": ["const [${1:hook}, set${2:Hook}] = useState($0)"],
     "description": "React Hook"
   },
@@ -67,7 +67,7 @@
       "",
       "  return (",
       "    <${3:htmlTag}>",
-      "      <${4: returnCode} />",
+      "      ${4:< />}",
       "    </${3:htmlTag}>",
       "  )",
       "}",
@@ -121,5 +121,11 @@
       "export default App"
     ],
     "description": "New App Importing One Component"
+  },
+  "JSX Element": {
+    "scope": "jsx",
+    "prefix": "ej",
+    "body": ["<$0 />"],
+    "description": "JSX Element"
   }
 }
