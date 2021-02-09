@@ -54,7 +54,7 @@
   "Create Hook with useState": {
     "scope": "javascript,typescript,javascriptreact",
     "prefix": "ho",
-    "body": ["const [${1:hook}, set${2:Hook}] = useState($0)"],
+    "body": ["const [${1:hook}, set$0${1:hook}] = useState(${2:state})"],
     "description": "React Hook"
   },
 
@@ -87,11 +87,11 @@
       "    this.state = {",
       "      ${3}",
       "    }",
-      "    ${4}",
+      "    console.log('constructor')",
       "  }",
       "",
       "  render() {",
-      "  ${5}",
+      "    console.log('render')",
       "    return (",
       "      <>",
       "        $0",
@@ -106,6 +106,7 @@
   },
 
   "New App Importing One Component": {
+    "scope": "jsx, jsx-attr",
     "prefix": "nac",
     "body": [
       "import ${1:ComponentName} from './components/${1:ComponentName}'",
@@ -122,10 +123,31 @@
     ],
     "description": "New App Importing One Component"
   },
+
+  "btn onClick": {
+    "scope": "jsx, jsx-attr",
+    "prefix": "boc",
+    "body": [
+      "<button onClick={() => {",
+      "  $0",
+      "}}>",
+      "${1:text}",
+      "</button>"
+    ],
+    "description": "btn onClick"
+  },
+
   "JSX Element": {
-    "scope": "jsx",
+    "scope": "jsx, jsx-attr",
     "prefix": "ej",
     "body": ["<$0 />"],
     "description": "JSX Element"
+  },
+
+  "Curly braces": {
+    "scope": "jsx, jsx-attr",
+    "prefix": "{",
+    "body": ["{}"],
+    "description": "Curly braces"
   }
 }
