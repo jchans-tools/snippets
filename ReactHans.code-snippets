@@ -142,12 +142,5 @@
     "prefix": "ej",
     "body": ["<$0 />"],
     "description": "JSX Element"
-  },
-
-  "Curly braces": {
-    "scope": "jsx, jsx-attr",
-    "prefix": "{",
-    "body": ["{}"],
-    "description": "Curly braces"
   }
 }
