@@ -15,77 +15,86 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-
   "import React": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "ir",
-    "body": ["import React from 'react'$0"],
+    "body": [
+      "import React from 'react'$0"
+    ],
     "description": "import useState"
   },
-
   "import useState": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "iust",
-    "body": ["import { useState } from 'react'$0"],
+    "body": [
+      "import { useState } from 'react'$0"
+    ],
     "description": "import useState"
   },
-
   "import React and useState": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "iru",
-    "body": ["import React, { useState } from 'react'$0"],
+    "body": [
+      "import React, { useState } from 'react'$0"
+    ],
     "description": "import React and useState"
   },
-
   "import React and useState and useEffect": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "iruu",
-    "body": ["import React, { useState, useEffect } from \"react\"$0"],
+    "body": [
+      "import React, { useState, useEffect } from \"react\"$0"
+    ],
     "description": "import React and useState and useEffect"
   },
-
   "import useState and useEffect": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "iuu",
-    "body": ["import { useState, useEffect } from \"react\"$0"],
+    "body": [
+      "import { useState, useEffect } from \"react\"$0"
+    ],
     "description": "import useState and useEffect"
   },
-
   "import without braces": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "imp",
-    "body": ["import ${1} from '$0'"],
+    "body": [
+      "import ${1} from '$0'"
+    ],
     "description": "import without braces"
   },
-
   "import comonents": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "imc",
-    "body": ["import ${1:Component} from '$0${1:Component}'"],
+    "body": [
+      "import ${1:Component} from '$0${1:Component}'"
+    ],
     "description": "import without braces"
   },
-
   "Create Hook with useState": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "ho",
-    "body": ["const [${1:hook}, set$0${1:hook}] = useState(${2:state})"],
+    "body": [
+      "const [${1:hook}, set$0${1:hook}] = useState(${2:state})"
+    ],
     "description": "React Hook"
   },
-
   "const props": {
     "prefix": "pr",
-    "body": ["const { $0 } = props"],
+    "body": [
+      "const { $0 } = props"
+    ],
     "description": "const {  } = props"
   },
-
   "to component props": {
     "prefix": "prc",
-    "body": ["${1} = { ${1} }$0"],
+    "body": [
+      "${1} = { ${1} }$0"
+    ],
     "description": "const {  } = props"
   },
-
   "Function Component Template": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "fc",
     "body": [
       "function ${1:ComponentName}(${2}) {",
@@ -102,9 +111,8 @@
     ],
     "description": "Function Component Template"
   },
-
   "Class Component Template": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "cc",
     "body": [
       "class ${1:ComponentName} extends React.Component {",
@@ -130,7 +138,6 @@
     ],
     "description": "Class Component Template"
   },
-
   "New App Importing One Component": {
     "scope": "jsx, jsx-attr",
     "prefix": "nac",
@@ -149,7 +156,6 @@
     ],
     "description": "New App Importing One Component"
   },
-
   "btn onClick": {
     "scope": "jsx, jsx-attr",
     "prefix": "boc",
@@ -162,11 +168,12 @@
     ],
     "description": "btn onClick"
   },
-
   "JSX Element": {
     "scope": "jsx, jsx-attr",
     "prefix": "ej",
-    "body": ["<$0 />"],
+    "body": [
+      "<$0 />"
+    ],
     "description": "JSX Element"
   }
 }
