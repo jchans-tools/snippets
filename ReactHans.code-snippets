@@ -138,6 +138,11 @@
     ],
     "description": "New App Importing One Component"
   },
+  "onClick for React": {
+    "prefix": "oc",
+    "body": ["onClick={($0) => {$1}}$2"],
+    "description": "onClick for React"
+  },
   "btn onClick": {
     "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "boc",
