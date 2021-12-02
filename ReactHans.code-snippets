@@ -85,7 +85,7 @@
   },
 
   "Function Component Template": {
-    "scope": "javascript,typescript,javascriptreact",
+    "scope": "javascript,typescript,javascriptreact, typescriptreact",
     "prefix": "fc",
     "body": [
       "function ${1:ComponentName}(${2}) {",
@@ -168,5 +168,17 @@
     "prefix": "ej",
     "body": ["<$0 />"],
     "description": "JSX Element"
+  },
+
+  "Prop type validation": {
+    "prefix": "pt",
+    "body": [
+      "import PropTypes from \"prop-types\";",
+      "",
+      "${1:Component}.propTypes = {",
+      "  ${2:prop}: PropTypes.${3:prop type}.isRequired,",
+      "};"
+    ],
+    "description": "Prop type validation"
   }
 }
