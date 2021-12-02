@@ -1,29 +1,34 @@
 {
   "console.log()": {
-    "scope": "javascript, jsx, jsx-attr",
+    "scope": "javascript, jsx, jsx-attr, typescriptreact",
     "prefix": "cl",
-    "body": ["console.log($0);"],
+    "body": [
+      "console.log($0);"
+    ],
     "description": "console.log()"
   },
-
   "const": {
     "scope": "javascript, jsx, jsx-attr",
     "prefix": "cs",
-    "body": ["const"],
+    "body": [
+      "const"
+    ],
     "description": "const"
   },
-
   "Arrow Function Expression Basic": {
     "scope": "javascript, jsx, jsx-attr",
     "prefix": "afe",
-    "body": ["(${1:param}) => {$0}"],
+    "body": [
+      "(${1:param}) => {$0}"
+    ],
     "description": "Arrow Function Expression Basic"
   },
-
   "document": {
     "scope": "javascript, jsx, jsx-attr",
     "prefix": "d",
-    "body": ["document$0"],
+    "body": [
+      "document$0"
+    ],
     "description": "the word document"
   }
 }
