@@ -17,5 +17,11 @@
     "prefix": "jcb",
     "body": ["```JavaScript", "$0", "```"],
     "description": "JavaScript Code Block"
+  },
+
+  "Shell Code Block": {
+    "prefix": "scb",
+    "body": ["```Shell", "$0", "```"],
+    "description": "Shell Code Block"
   }
 }
