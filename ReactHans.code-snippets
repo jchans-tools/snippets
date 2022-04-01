@@ -162,6 +162,12 @@
     "description": "JSX Element"
   },
 
+  "Prop of same name to pass": {
+    "prefix": "psn",
+    "body": ["${1:prop name}={${1:prop name}}$0"],
+    "description": "Prop of same name to pass"
+  },
+
   "Prop type validation": {
     "prefix": "pt",
     "body": [
