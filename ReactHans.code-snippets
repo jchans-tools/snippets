@@ -169,7 +169,7 @@
   },
 
   "Prop type validation": {
-    "prefix": "pt",
+    "prefix": "pv",
     "body": [
       "import PropTypes from \"prop-types\";",
       "",
