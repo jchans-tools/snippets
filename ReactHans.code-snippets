@@ -168,15 +168,30 @@
     "description": "Prop of same name to pass"
   },
 
-  "Prop type validation": {
+  "import prop type validation": {
+    "prefix": "ipv",
+    "body": ["import PropTypes from \"prop-types\";$0"],
+    "description": "import prop type validation"
+  },
+
+  "props validation": {
     "prefix": "pv",
     "body": [
-      "import PropTypes from \"prop-types\";",
-      "",
       "${1:Component}.propTypes = {",
-      "  ${2:prop}: PropTypes.${3:prop type}.isRequired,",
-      "};"
+      "  ${2:PropName}: PropTypes.${3:type},",
+      "};$0"
     ],
-    "description": "Prop type validation"
+    "description": "props validation"
+  },
+
+  "PropTypes": {
+    "prefix": "pt",
+    "body": ["PropTypes"],
+    "description": "PropTypes"
+  },
+  "To use a component": {
+    "prefix": "uc",
+    "body": ["<${1:Component Name} />$0"],
+    "description": "To use a component"
   }
 }
